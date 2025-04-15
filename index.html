@@ -1,80 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Sitio Web</title>
+    <title>TECNO</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
             background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
         header .logo img {
-            max-width: 100px;
+            max-width: 120px;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
         }
 
         .banner {
-            background-color: #f4f4f4;
-            padding: 20px;
+            background-color: #ff6f61;
+            color: white;
+            padding: 80px 20px;
             text-align: center;
         }
 
+        .banner h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 24px;
+        }
+
         .contenido {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .contenido article {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .contenido article h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .contenido article p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .contenido article img {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contenido article img:hover {
+            transform: scale(1.05);
         }
 
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .redes-sociales a {
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            transform: scale(1.1);
         }
 
         .redes-sociales img {
-            width: 30px;
-            margin: 0 10px;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .redes-sociales img:hover {
+            opacity: 0.7;
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo de la Empresa">
+            <img src="logo tecno.png" alt="Logo de la Empresa">
         </div>
         <nav>
             <ul>
@@ -87,29 +146,29 @@
     </header>
     <main>
         <section class="banner">
-            <h1>Bienvenidos a Nuestro Sitio Web</h1>
+            <h1>Bienvenidos a TECNO</h1>
             <p>Ofrecemos los mejores servicios para ti.</p>
         </section>
         <section class="contenido">
             <article>
                 <h2>Nuestros Servicios</h2>
-                <p>Descripción de los servicios ofrecidos.</p>
-                <img src="servicio1.jpg" alt="Servicio 1">
+                <p>Descripción de los servicios ofrecidos. Con años de experiencia en el sector, ofrecemos soluciones personalizadas para ti.</p>
+                <img src="home_1_slider_4.jpg" alt="Servicio 1">
             </article>
             <article>
                 <h2>Sobre Nosotros</h2>
-                <p>Información sobre la empresa.</p>
-                <img src="nosotros.jpg" alt="Nosotros">
+                <p>Es una empresa líder en asistencia tecnológica fundada en 2015, especializada en ofrecer soluciones de soporte y asesoramiento en tecnología para empresas y particulares. Con sede en Ciudad de Panamá, TecnoAssist ha crecido rápidamente hasta convertirse en un referente en la industria, brindando soporte integral en áreas como ciberseguridad, mantenimiento de equipos electrónicos y consultoría en inteligencia artificial.</p>
+                <img src="Tecno-Logo-Vector-scaled.jpg" alt="Nosotros">
             </article>
         </section>
     </main>
     <footer>
-        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-        <p>Email: contacto@empresa.com</p>
+        <p>Rio llico 67, Concepcion, Chile</p>
+        <p>Email: TECNO@contactoempresa.cl</p>
         <div class="redes-sociales">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            <a href="#" title="Facebook"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="#" title="Twitter"><img src="twitter.svg" alt="Twitter"></a>
+            <a href="#" title="Instagram"><img src="instagram.svg"Instagram"></a>            
         </div>
     </footer>
 </body>
